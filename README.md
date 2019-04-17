@@ -7,10 +7,10 @@ You need to obtain your personal API key from the OMDb API website in order to b
 
 
 ### Building an Image:
-First Build a image for our program by Dockerfile(we have a dockerfile in our repo). Edit the dockerfile and replace the movie name in CMD with your Movie name by "-t" tag and --tomatoes for . Then execute the folowing command to build an image.
+First Build a image for our program with Dockerfile(we have a dockerfile in our repo). 
 
 
-Following are the arguments:
+Following are the arguments to get movie info from the OMDb.
 optional arguments:
   -h, --help            show this help message and exit
   -t T                  Movie title
@@ -31,16 +31,24 @@ optional arguments:
 
 
  You can use any of these arguments and add to Dockerfile, it is based on how we want output.
+ Then, to get the movie info written a script with the above arguments to execute the python file having in our repo.
  
  
-  Then execute the following command to build an Image. 
+ Finally, execute the following command to build an Image. 
  
          # docker build -t <reponame>:<tagname> .
          
          
-###  Executing the program by running docker container to query a movie.        
+###  Executing the program by running docker container to query a movie info.        
          
       # docker run -it <imagename>
+      
+      eg: # docker run -it movie_info:latest
+      
+ It will prompt for movie name as follows:
+          Enter the movie name:
+          Okkadu
+          
       
       
       
