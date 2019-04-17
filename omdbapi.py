@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# ----------OMDB_API_QUERY----------------
+# ---------------------OMDB_MOVIE_SEARCH----------------------------#
 
 from __future__ import print_function
 import argparse
