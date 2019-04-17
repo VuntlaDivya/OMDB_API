@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# ---------------------OMDB_MOVIE_SEARCH----------------------------#
+# -*- coding: utf-8 -*-
 
 from __future__ import print_function
 import argparse
@@ -43,7 +43,7 @@ parser.add_argument(
 
 parser.add_argument(
     "--plot",
-   help="Length of plot summary",
+    help="Length of plot summary",
     choices=['short', 'full'])
 
 parser.add_argument(
